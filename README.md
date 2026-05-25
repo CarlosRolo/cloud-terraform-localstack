@@ -1,11 +1,11 @@
-# CLOUD-02: Infrastructure as Code with Terraform + LocalStack
+}# CLOUD-02: Infrastructure as Code with Terraform + LocalStack
 
 ![Terraform](https://img.shields.io/badge/Terraform-1.15-7B42BC?logo=terraform)
 ![LocalStack](https://img.shields.io/badge/LocalStack-3.4-FF6600?logo=amazon-aws)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-336791?logo=postgresql)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-AWS-compatible infrastructure defined entirely as code using **Terraform** and **LocalStack** — no AWS account required. Provisions a production-grade network topology with VPC, EC2, S3, and PostgreSQL, including remote state management with S3 backend and DynamoDB locking.
+AWS-compatible infrastructure defined entirely as code using **Terraform** and **LocalStack** - no AWS account required. Provisions a production-grade network topology with VPC, EC2, S3, and PostgreSQL, including remote state management with S3 backend and DynamoDB locking.
 
 ## Architecture
 
@@ -131,15 +131,15 @@ make destroy  # terraform destroy -auto-approve
 
 ## Key Concepts Demonstrated
 
-**Infrastructure as Code** — every resource is declarative HCL, version-controlled and reproducible. No manual clicks in a console.
+**Infrastructure as Code** - every resource is declarative HCL, version-controlled and reproducible. No manual clicks in a console.
 
-**Modular Terraform** — each service (VPC, EC2, S3, RDS) is an independent reusable module with its own variables and outputs. Adding a new environment is a single tfvars file.
+**Modular Terraform** - each service (VPC, EC2, S3, RDS) is an independent reusable module with its own variables and outputs. Adding a new environment is a single tfvars file.
 
-**Remote State** — Terraform state stored in S3 with DynamoDB locking prevents concurrent modifications and enables team collaboration.
+**Remote State** - Terraform state stored in S3 with DynamoDB locking prevents concurrent modifications and enables team collaboration.
 
-**Least-privilege Security** — RDS Security Group restricts PostgreSQL access to VPC CIDR only (10.0.0.0/16). SSH restricted to private ranges. S3 bucket blocks all public access.
+**Least-privilege Security** - RDS Security Group restricts PostgreSQL access to VPC CIDR only (10.0.0.0/16). SSH restricted to private ranges. S3 bucket blocks all public access.
 
-**LocalStack** — full AWS API simulation locally at zero cost. The same HCL deploys to real AWS by removing the custom endpoints block from provider.tf — zero code changes required.
+**LocalStack** - full AWS API simulation locally at zero cost. The same HCL deploys to real AWS by removing the custom endpoints block from provider.tf — zero code changes required.
 
 ## Verified Outputs
 
@@ -158,7 +158,7 @@ vpc_id            = "vpc-adade73e"
 ## Autor
  
 **Carlos David Rodriguez Lopez**  
-Telematic Engineer — ESPOCH  
+Telematic Engineer - ESPOCH  
 Riobamba, Chimborazo, Ecuador  
 Manta, Manabí, Ecuador  
 GitHub: [github.com/CarlosRolo](https://github.com/CarlosRolo)  
@@ -168,4 +168,4 @@ LinkedIn: [linkedin.com/in/carlosdrodriguezl](https://linkedin.com/in/carlosdrod
 
 ## License
 
-MIT License — see [LICENSE](LICENSE)
+MIT License - see [LICENSE](LICENSE)
