@@ -5,11 +5,24 @@ services:
     ports:
       - "4566:4566"
     environment:
-      - SERVICES=ec2,s3,rds,dynamodb,iam,sts
+      - SERVICES=ec2,s3,dynamodb,iam,sts
       - DEBUG=0
       - DEFAULT_REGION=us-east-1
     volumes:
       - localstack_data:/var/lib/localstack
       - /var/run/docker.sock:/var/run/docker.sock
+
+  postgres:
+    image: postgres:14-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=teleopsdb
+      - POSTGRES_USER=teleops_admin
+      - POSTGRES_PASSWORD=LocalStack123!
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
 volumes:
   localstack_data:
+  postgres_data:
