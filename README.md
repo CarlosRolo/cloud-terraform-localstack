@@ -14,23 +14,23 @@ AWS-compatible infrastructure defined entirely as code using **Terraform** and *
 |           LocalStack (Docker) - AWS API                 |
 |               endpoint: localhost:4566                  |
 |                                                         |
-|  +---------------- VPC 10.0.0.0/16 -----------------+  |
-|  |                                                   |  |
-|  |  +-- Public Subnet 10.0.1.0/24 ---------------+  |  |
-|  |  |  EC2 t3.micro                              |  |  |
-|  |  |  Security Group (22/80/443)                |  |  |
-|  |  |  Internet Gateway                          |  |  |
-|  |  +--------------------------------------------+  |  |
-|  |                                                   |  |
-|  |  +-- Private Subnet 10.0.2.0/24 --------------+  |  |
-|  |  |  PostgreSQL 14 (Docker)                    |  |  |
-|  |  |  Security Group (5432 VPC only)            |  |  |
-|  |  +--------------------------------------------+  |  |
+|  +---------------- VPC 10.0.0.0/16 -----------------+   |
+|  |                                                  |   |
+|  |  +-- Public Subnet 10.0.1.0/24 ---------------+  |   |
+|  |  |  EC2 t3.micro                              |  |   |
+|  |  |  Security Group (22/80/443)                |  |   |
+|  |  |  Internet Gateway                          |  |   |
+|  |  +--------------------------------------------+  |   |
+|  |                                                  |   |
+|  |  +-- Private Subnet 10.0.2.0/24 --------------+  |   |
+|  |  |  PostgreSQL 14 (Docker)                    |  |   |
+|  |  |  Security Group (5432 VPC only)            |  |   |
+|  |  +--------------------------------------------+  |   |
 |  +---------------------------------------------------+  |
 |                                                         |
-|  S3: teleops-data-local   (application data)           |
-|  S3: teleops-tf-state     (Terraform remote state)     |
-|  DynamoDB: tf-state-lock  (state locking)              |
+|  S3: teleops-data-local   (application data)            |
+|  S3: teleops-tf-state     (Terraform remote state)      |
+|  DynamoDB: tf-state-lock  (state locking)               |
 +---------------------------------------------------------+
 ```
 
@@ -160,6 +160,7 @@ vpc_id            = "vpc-adade73e"
 **Carlos David Rodriguez Lopez**  
 Telematic Engineer — ESPOCH  
 Riobamba, Chimborazo, Ecuador  
+Manta, Manabí, Ecuador  
 GitHub: [github.com/CarlosRolo](https://github.com/CarlosRolo)  
 LinkedIn: [linkedin.com/in/carlosdrodriguezl](https://linkedin.com/in/carlosdrodriguezl)
  
