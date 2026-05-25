@@ -153,14 +153,17 @@ rds_endpoint      = "localhost:5432"
 rds_db_name       = "teleopsdb"
 vpc_id            = "vpc-adade73e"
 ```
-
-## Author
-
-**Carlos David Rodriguez Lopez**
-Telematic Engineer — ESPOCH
-Riobamba, Chimborazo, Ecuador
-GitHub: [github.com/CarlosRolo](https://github.com/CarlosRolo)
+---
+ 
+## Autor
+ 
+**Carlos David Rodriguez Lopez**  
+Telematic Engineer — ESPOCH  
+Riobamba, Chimborazo, Ecuador  
+GitHub: [github.com/CarlosRolo](https://github.com/CarlosRolo)  
 LinkedIn: [linkedin.com/in/carlosdrodriguezl](https://linkedin.com/in/carlosdrodriguezl)
+ 
+---
 
 ## License
 
